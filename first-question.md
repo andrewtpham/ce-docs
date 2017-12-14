@@ -35,6 +35,8 @@
  
  Now, you should see "(venv) Andrew-MacBook:TolaActivity andrew$" in your command line
  
+`export PATH=$PATH:/usr/local/mysql/bin`
+
  #### Install Requirements
  
  `pip install -r requirements.txt`
