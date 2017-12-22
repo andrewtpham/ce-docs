@@ -4,7 +4,7 @@
 
 `git clone https://github.com/toladata-foundation/TolaActivity.git`
 
-2. To make sure you have the latest changes, go in to the local folder where you cloned the repo  `git checkout new_dev`
+2. To make sure you have the latest changes, switch to the `new_dev` branch  `git checkout new_dev`
 
 3. Open the repo in a text editor and go to: `local.py` file
 
