@@ -1,20 +1,21 @@
 #### Install
 
-1. Check out the [TolaActivity](https://github.com/toladata-foundation/TolaActivity) repo
+1. Check out the [TolaActivity](https://github.com/toladata-ce/TolaActivity) repo
 
-`git clone https://github.com/toladata-foundation/TolaActivity.git`
+`git clone https://github.com/toladata-ce/TolaActivity.git`
 
-2. To make sure you have the latest changes, switch to the `new_dev` branch  `git checkout new_dev`
+1. To make sure you have the latest changes, switch to the `new_dev` branch  `git checkout new_dev`
 
-3. Open the repo in a text editor and go to: `local.py` file
+2. Open the repo in a text editor and go to: `local.py` file
 
-2. Find the following code snippet
+3. Find the following code snippet
 
        except KeyError:`
            \# Fallback for tests without environment variables configured
            \# Depends on os.environ for correct functionality
 
 and highlight the following:
+
 ```
            DATABASES = {
                'default': {
@@ -23,7 +24,8 @@ and highlight the following:
                }
            }
 ```
-3. Replace with:
+
+1. Replace with:
 
    ```
    DATABASES = {
@@ -39,15 +41,15 @@ and highlight the following:
 
 #### Deploy locally via virtualenv
 
-   `pip install virtualenv`
+`pip install virtualenv`
 
-   `virtualenv —no-site-packages venv`
+`virtualenv —no-site-packages venv`
 
-   `virtualenv venv`
+`virtualenv venv`
 
-   `. venv/bin/activate`
+`. venv/bin/activate`
 
-   Now, you should see "\(venv\) Andrew-MacBook:TolaActivity andrew$" in your command line
+Now, you should see "\(venv\) Andrew-MacBook:TolaActivity andrew$" in your command line
 
 `export PATH=$PATH:/usr/local/mysql/bin`
 
